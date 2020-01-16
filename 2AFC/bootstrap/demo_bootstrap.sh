@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-# Makes programs, downloads sample data, trains a GloVe model, and then evaluates it.
-# One optional argument can specify the language used for eval script: matlab, octave or [default] python
-
-
 SEED=$1
 N=$2
 CORPUS=wiki.en.text
@@ -22,7 +18,7 @@ WINDOW_SIZE=15
 BINARY=2
 NUM_THREADS=8
 X_MAX=10
-CORPUSGENERATOR="/home/tozeng/anaconda3/bin/python bootstrap_file.py $CORPUS $SEED $N"
+CORPUSGENERATOR="python bootstrap_file.py $CORPUS $SEED $N"
 
 echo
 echo "$ $CORPUSGENERATOR | $BUILDDIR/vocab_count -min-count $VOCAB_MIN_COUNT -verbose $VERBOSE > $VOCAB_FILE"
