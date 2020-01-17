@@ -6,6 +6,9 @@ Syracuse University
 Science of Science & Computational Discovery Lab  
 Syracuse, New York  
   
+[Link to the paper](https://arxiv.org/abs/1912.10818)
+
+
 ## 2AFC  
   
 In the 2AFC folder, /bootstrap/ inncludes the script we have used to bootstrap the GloVe model.  
